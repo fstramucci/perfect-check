@@ -18,10 +18,17 @@ Docker Compose is required. Clone the repository and run this:
     composer install --ignore-platform-reqs
 
 It will initialize a small Docker container with PHP and Composer to install the application's dependencies.
+
 After that, run `./vendor/bin/sail up` to initialize the rest of the application
 ([Sail](https://laravel.com/docs/9.x/sail) is a Laravel wrapper for Docker Compose).  
+
+Then, copy and rename `.env.example` to `.env`, and generate the application encryption key:
+
+    cp .env.example .env
+    ./vendor/bin/sail artisan key:generate
+
 Then the API will be ready, its endpoint is `/api/perfect-check/{number}`.
 It returns plain strings.
 
-If an UI is needed, run `./vendor/bin/sail npm install` and `./vendor/bin/sail npm run dev`.
+If an UI is needed, run `./vendor/bin/sail npm install` and `./vendor/bin/sail npm run dev`.  
 It will initialize Axios and the required Javascript functions.

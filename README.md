@@ -28,6 +28,6 @@ You might need to use another terminal since Docker Compose will be running in t
     cp .env.example .env \
     ./vendor/bin/sail artisan key:generate
 
-Then the API will be ready, its endpoint is `{localhost}/api/perfect-check/{number}` (GET request).
+Then the API will be ready, its endpoint is `{localhost}/api/perfect-check/{number1}/{number2}` (GET request).
 It returns a JSON array. It can be accessed at [localhost](http://localhost), where a Javascript
 UI will be available for testing. It can also be accessed through `wget` or any HTTP request generator.

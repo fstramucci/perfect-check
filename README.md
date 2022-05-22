@@ -2,8 +2,8 @@
 
 This is a technical challenge for an important digital payments company.
 
-It consists in an API that receives a positive integer number,
-and checks if it's a [perfect number](https://en.wikipedia.org/wiki/Perfect_number).
+It consists in an API that receives two positive integer numbers,
+and checks for all [perfect numbers](https://en.wikipedia.org/wiki/Perfect_number) in that range.
 
 
 ### Installation

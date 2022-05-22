@@ -2164,8 +2164,8 @@ module.exports = {
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
-perfectCheck = function perfectCheck(number) {
-  axios.get('/api/perfect-check/' + number).then(function (response) {
+perfectCheck = function perfectCheck(number1, number2) {
+  axios.get('/api/perfect-check/' + number1 + '/' + number2).then(function (response) {
     document.getElementById('result').innerText = response.data;
   })["catch"](function (error) {
     return console.error(error);

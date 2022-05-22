@@ -15,8 +15,9 @@
 <body>
     <div>
         <form onsubmit="event.preventDefault()">
-            <input id="number" type="number" min="1">
-            <input type="submit" value="Check" onclick="perfectCheck(document.getElementById('number').value)">
+            <input id="number1" type="number" min="1">
+            <input id="number2" type="number" min="2">
+            <input type="submit" value="Check" onclick="perfectCheck(document.getElementById('number1').value, document.getElementById('number2').value)">
         </form>
         <span id="result">
 

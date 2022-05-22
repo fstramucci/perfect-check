@@ -15,4 +15,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/perfect-check/{number}', PerfectCheck::class);
+Route::get('/perfect-check/{number1}/{number2}', PerfectCheck::class);
